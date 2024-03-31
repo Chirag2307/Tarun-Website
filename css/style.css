@@ -1393,5 +1393,52 @@ form label {
   opacity: 0;
 }
 
+.product {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px;
+
+}
+.product img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.product .p-details{
+  padding-left: 15px;
+}
+.product .p-details h2{
+  font-size: 20px;
+  color: black;
+}
+.container{
+  width:100%;
+  /* height:  */
+  background: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 30px;
+  padding: 20px;
+}
+.container form{
+  width: 100%;
+  border: 1px solid blue;
+  border-radius: 4px;
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+}
+.container form input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 16px;
+}
+.container form i {
+  padding-left: 10px;
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
 

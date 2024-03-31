@@ -31,6 +31,8 @@
 	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 
 	<!-- Animate.css -->
+	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
@@ -67,9 +69,9 @@
 		<nav class="gtco-nav" role="navigation">
 			<div class="gtco-container">
 				<div class="row">
-					<div class="col-xs-2">
+					<!-- <div class="col-xs-2">
 						<div id="gtco-logo"><a href="#">TarunSpot</a></div>
-					</div>
+					</div> -->
 					<div class="col-xs-8 text-center menu-1">
 						<ul>
 							<!-- <li class="active"><a href="index.html">Home</a></li> -->
@@ -95,7 +97,7 @@
 
 				</div>
 		</nav>
-		<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" 
+		<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner"
 			style="background-image:url(images/PC.jpg); width:100%; margin-right:auto; overflow: hidden;">
 
 			<div class="gtco-container">
@@ -131,14 +133,70 @@
 		<div id="gtco-features">
 			<div class="gtco-container">
 				<div class="mt-4" id="links_container_overall" data-scrollid="646b223387ca99.88389722">
-					<div class="container">
+					<div>
 						<p>Tarun Spot is a participant of Amazon LLC Associate Program which is an affiliate advertising
 							program designed for website owners to earn fees by advertising and linking to Amazon. </p>
-						<!-- <input type="text" id="searchInput" placeholder="Search..."> -->
-						<!-- <select class="js-example-basic-single" id="select-item" name="item"> -->
-						<!-- </select> -->
 
-						<div id="all-items">
+
+						<section class="container">
+							<form >
+								<!-- <i class="fa fa-search"></i> -->
+								<i class="fas fa-search search__icon" ></i>
+								<input type="text" id="search-item" placeholder="Search Products..." onkeyup="search()">
+							</form>
+
+							<br>
+							<br>
+							<div class="product-list">
+
+								<div class="product">
+									<a href="https://amzn.to/3GC78Np">
+									<img src="images/WhatsApp Image 2024-02-25 at 12.48.55 AM.jpeg">
+									<div class="p-details">
+											<h2>Arctic Fox Slope Anti Theft 23 L Backpack</h2>
+										</a>
+									</div>
+								</div>
+
+								<div class="product">
+									<a href="https://amzn.to/3HtU90A">
+									<img src="images/tarun_mic.jpeg">
+									<div class="p-details">
+											<h2>Boya ByM1 Auxiliary Omnidirectional Lavalier Condenser Microphone</h2>
+										</a>
+									</div>
+								</div>
+
+								<div class="product">
+									<a href="https://amzn.to/3MsoqAp">
+									<img src="images/tarun_big_mic.jpeg">
+									<div class="p-details">
+											<h2>FIFINE USB Gaming Microphone</h2>
+										</a>
+									</div>
+								</div>
+
+								<div class="product">
+									<a href="https://amzn.to/3JzyUx5">
+									<img src="images/taun_webcam.jpeg">
+									<div class="p-details">
+											<h2>Lenovo 300 FHD Webcam with Full Stereo Dual Built-in mics </h2>
+										</a>
+									</div>
+								</div>
+
+								<div class="product">
+									<a href="https://amzn.to/3HswopS">
+									<img src="images/tarun_headphone.jpeg">
+									<div class="p-details">
+											<h2>Redgear Cosmo 7.1 Usb Gaming Wired</h2>
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</section>
+						<!-- <div id="all-items">
 							<div class="row">
 								<div class="col-md-4">
 									<a href="https://amzn.to/3GC78Np"><img
@@ -170,7 +228,7 @@
 								<div class="col-md-4">
 									<a href="https://amzn.to/3HswopS"> <img src="images/tarun_headphone.jpeg"
 											class="img-fluid">
-										Redgear Cosmo 7,1 Usb Gaming Wired </a>
+										Redgear Cosmo 7.1 Usb Gaming Wired </a>
 								</div>
 								<br>
 								<!-- <div class="col-md-4">
@@ -179,14 +237,14 @@
 											class="img-fluid">
 										Arctic Fox Slope Anti Theft 23 L Backpack </a>
 								</div> -->
-							</div>
-						</div>
 					</div>
-
-				</div>
+				</div> 
 			</div>
 
-			<!-- <div id="gtco-features-2">
+		</div>
+	</div>
+
+	<!-- <div id="gtco-features-2">
 				<div class="gtco-container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
@@ -243,144 +301,143 @@
 				</div>
 			</div> -->
 
-			<div id="gtco-counter" class="gtco-bg gtco-counter" style="background-image:url(images/img_bg_2.jpg);">
-				<div class="gtco-container">
-					<div class="row">
-						<div class="display-t">
-							<div class="display-tc">
-								<div class="col-md-3 col-sm-6 animate-box">
-									<div class="feature-center">
-										<span class="icon">
-											<i class="icon-eye"></i>
-										</span>
+	<div id="gtco-counter" class="gtco-bg gtco-counter" style="background-image:url(images/img_bg_2.jpg);">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-eye"></i>
+								</span>
 
-										<span class="counter js-counter" data-from="0" data-to="100000" data-speed="2500"
-											data-refresh-interval="50">1</span>
-										<span class="counter-label">Views</span>
+								<span class="counter js-counter" data-from="0" data-to="100000" data-speed="2500"
+									data-refresh-interval="50">1</span>
+								<span class="counter-label">Views</span>
 
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 animate-box">
-									<div class="feature-center">
-										<span class="icon">
-											<i class="icon-anchor"></i>
-										</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-anchor"></i>
+								</span>
 
-										<span class="counter js-counter" data-from="0" data-to="730" data-speed="5000"
-											data-refresh-interval="50">1</span>
-										<span class="counter-label">Subscribers</span>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 animate-box">
-									<div class="feature-center">
-										<span class="icon">
-											<i class="icon-briefcase"></i>
-										</span>
-										<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000"
-											data-refresh-interval="50">1</span>
-										<span class="counter-label">Live Streams</span>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 animate-box">
-									<div class="feature-center"> 
-										<span class="icon">
-											<i class="icon-clock"></i>
-										 </span>
+								<span class="counter js-counter" data-from="0" data-to="730" data-speed="5000"
+									data-refresh-interval="50">1</span>
+								<span class="counter-label">Subscribers</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-briefcase"></i>
+								</span>
+								<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000"
+									data-refresh-interval="50">1</span>
+								<span class="counter-label">Live Streams</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-clock"></i>
+								</span>
 
-										 <span class="counter js-counter" data-from="0" data-to="1623" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter js-counter" data-from="0" data-to="1623" data-speed="5000"
+									data-refresh-interval="50">1</span>
 								<span class="counter-label">Hours Spent</span>
 
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<div id="gtco-testimonial">
-				<div class="gtco-container">
-					<!-- <div class="row"> -->
-					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-							<h2>Our Team</h2>
-						</div>
-					</div>
-					<div class="row animate-box">
-						<div class="owl-carousel owl-carousel-fullwidth ">
-							<div class="item">
-								<div class="testimony-slide active text-center">
-									<figure>
-										<a style="color: black;" href="https://www.instagram.com/tarunplayz_09/"
-										target="_blank">
-										<img src="images/Tarun_pp.jpg" alt="user">
-									</figure>
-									<span>Tarun Pareek
-										<!-- <a href="#" class="twitter">Twitter</a> -->
-									</span>
-
-									<blockquote>
-										<p>&ldquo;Founder.&rdquo;</p>
-									</blockquote>
-								</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-slide active text-center">
-									<figure>
-										<a style="color: black;" href="https://www.instagram.com/captain.design1/"
-										target="_blank">
-										<img src="images/person_3.jpg" alt="user">
-									</figure>
-									<span>Bishwajit Dutta
-										<!-- <a href="#" class="twitter">Twitter</a> -->
-									</span>
-									<blockquote>
-										<p>&ldquo;Social Manager.&rdquo;</p>
-									</blockquote>
-								</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-slide active text-center">
-									<a style="color: black;" href="https://www.instagram.com/captain.design1/"
-										target="_blank">
-									<figure>
-										<img src="images/person_3.jpg" alt="user">
-									</figure>
-									<span>Keval Haran
-										<!-- <a href="#" class="twitter">Twitter</a> -->
-									</span>
-									<blockquote>
-										<p>&ldquo;Graphics Designer.&rdquo;</p>
-									</blockquote>
-								</a>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-slide active text-center">
-									<a style="color: black;" href="https://www.instagram.com/im_shikamaru/"
-										target="_blank">
-										<figure>
-											<img src="images/shikamaaru.png" alt="user">
-										</figure>
-										<span>Chirag Sharma</span>
-										<!-- <blockquote> -->
-										<p>&ldquo;Web Developer&rdquo;</p>
-										<!-- </blockquote> -->
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- </div> -->
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<footer class="text-center">
-			<!-- <div class="gtco-container"> -->
-			<!-- <div class="row row-pb-md">
+	<div id="gtco-testimonial">
+		<div class="gtco-container">
+			<!-- <div class="row"> -->
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Our Team</h2>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="owl-carousel owl-carousel-fullwidth ">
+					<div class="item">
+						<div class="testimony-slide active text-center">
+							<figure>
+								<a style="color: black;" href="https://www.instagram.com/tarunplayz_09/"
+									target="_blank">
+									<img src="images/Tarun_pp.jpg" alt="user">
+							</figure>
+							<span>Tarun Pareek
+								<!-- <a href="#" class="twitter">Twitter</a> -->
+							</span>
+
+							<blockquote>
+								<p>&ldquo;Founder.&rdquo;</p>
+							</blockquote>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-slide active text-center">
+							<figure>
+								<a style="color: black;" href="https://www.instagram.com/captain.design1/"
+									target="_blank">
+									<img src="images/person_3.jpg" alt="user">
+							</figure>
+							<span>Bishwajit Dutta
+								<!-- <a href="#" class="twitter">Twitter</a> -->
+							</span>
+							<blockquote>
+								<p>&ldquo;Social Manager.&rdquo;</p>
+							</blockquote>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-slide active text-center">
+							<a style="color: black;" href="https://www.instagram.com/captain.design1/" target="_blank">
+								<figure>
+									<img src="images/person_3.jpg" alt="user">
+								</figure>
+								<span>Keval Haran
+									<!-- <a href="#" class="twitter">Twitter</a> -->
+								</span>
+								<blockquote>
+									<p>&ldquo;Graphics Designer.&rdquo;</p>
+								</blockquote>
+							</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testimony-slide active text-center">
+							<a style="color: black;" href="https://www.instagram.com/im_shikamaru/" target="_blank">
+								<figure>
+									<img src="images/IMG-20190826-WA0007 (1).jpg" alt="user">
+								</figure>
+								<span>Chirag Sharma</span>
+								<!-- <blockquote> -->
+								<p>&ldquo;Web Developer&rdquo;</p>
+								<!-- </blockquote> -->
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</div>
+	</div>
+
+	<footer class="text-center">
+		<!-- <div class="gtco-container"> -->
+		<!-- <div class="row row-pb-md">
 					<div class="col-md-4 gtco-widget">
 						<h3>The Company</h3>
 						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque
@@ -389,12 +446,12 @@
 					</div>
 					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 						<ul class="gtco-footer-links"> -->
-			<!-- <li><a href="#">About</a></li>
+		<!-- <li><a href="#">About</a></li>
 							<li><a href="#">Help</a></li>
 							<li><a href="#">Contact</a></li>
 							<li><a href="#">Terms</a></li>
 							<li><a href="#">Meetups</a></li> -->
-			<!-- </ul>
+		<!-- </ul>
 					</div>
 
 					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
@@ -418,16 +475,16 @@
 					</div>
 				</div> -->
 
-			<!-- <div class="row copyright">
+		<!-- <div class="row copyright">
 					<div class="col-md-12"> -->
-			<div>
-				<small> &copy; All Rights Reserved.
-					If any queries contact tarun@gmail.com </small>
-			</div>
+		<div>
+			<small> &copy; All Rights Reserved.
+				If any queries contact tarun@gmail.com </small>
+		</div>
 
-			<!-- Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> -->
+		<!-- Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> -->
 
-			<!-- <p class="pull-right">
+		<!-- <p class="pull-right">
 						<ul class="gtco-social-icons pull-right">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -435,88 +492,88 @@
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 						</ul>
 						</p> -->
-			<!-- </div> -->
-			<!-- </div> -->
+		<!-- </div> -->
+		<!-- </div> -->
 
-			<!-- </div> -->
-		</footer>
+		<!-- </div> -->
+	</footer>
 
-		<!-- <div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-		</div> -->
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
 
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- countTo -->
-		<script src="js/jquery.countTo.js"></script>
-		<!-- Magnific Popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/magnific-popup-options.js"></script>
-		<!-- Main -->
-		<script src="js/main.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				var data = [];
-				var itemList = document.getElementById('all-items').querySelectorAll('a');
-				itemList.forEach(function (item) {
-					var text = item.textContent.trim();
-					data.push({ id: text, text: text });
-				});
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script>
+		// document.addEventListener('DOMContentLoaded', function () {
+		// 	var data = [];
+		// 	var itemList = document.getElementById('all-items').querySelectorAll('a');
+		// 	itemList.forEach(function (item) {
+		// 		var text = item.textContent.trim();
+		// 		data.push({ id: text, text: text });
+		// 	});
 
-				var selectItem = document.getElementById('select-item');
-				var searchInput = document.getElementById('searchInput');
+		// 	var selectItem = document.getElementById('select-item');
+		// 	var searchInput = document.getElementById('searchInput');
 
-				selectItem.addEventListener('change', function () {
-					console.log('Selected item:', selectItem.value);
-				});
+		// 	selectItem.addEventListener('change', function () {
+		// 		console.log('Selected item:', selectItem.value);
+		// 	});
 
-				selectItem.addEventListener('select2:select', function (event) {
-					console.log('Selected item:', event.params.data.id);
-				});
+		// 	selectItem.addEventListener('select2:select', function (event) {
+		// 		console.log('Selected item:', event.params.data.id);
+		// 	});
 
-				searchInput.addEventListener('input', function () {
-					var searchTerm = searchInput.value.toLowerCase();
-					var filteredData = data.filter(function (item) {
-						return item.text.toLowerCase().includes(searchTerm);
-					});
+		// 	searchInput.addEventListener('input', function () {
+		// 		var searchTerm = searchInput.value.toLowerCase();
+		// 		var filteredData = data.filter(function (item) {
+		// 			return item.text.toLowerCase().includes(searchTerm);
+		// 		});
 
-					while (selectItem.firstChild) {
-						selectItem.removeChild(selectItem.firstChild);
-					}
+		// 		while (selectItem.firstChild) {
+		// 			selectItem.removeChild(selectItem.firstChild);
+		// 		}
 
-					filteredData.forEach(function (item) {
-						var option = new Option(item.text, item.id);
-						selectItem.add(option);
-					});
-				});
+		// 		filteredData.forEach(function (item) {
+		// 			var option = new Option(item.text, item.id);
+		// 			selectItem.add(option);
+		// 		});
+		// 	});
 
-				searchInput.addEventListener('keyup', function (event) {
-					if (event.key === 'Enter') {
-						// Handle the "Enter" key press if needed
-					}
-				});
+		// 	searchInput.addEventListener('keyup', function (event) {
+		// 		if (event.key === 'Enter') {
+		// 			// Handle the "Enter" key press if needed
+		// 		}
+		// 	});
 
-				searchInput.addEventListener('blur', function () {
-					// Handle the search input blur event if needed
-				});
+		// 	searchInput.addEventListener('blur', function () {
+		// 		// Handle the search input blur event if needed
+		// 	});
 
-				var select = new Select('#select-item', {
-					data: data,
-					placeholder: 'Select an item',
-					allowClear: true,
-					theme: 'bootstrap'
-				});
-			});
-		</script>
+		// 	var select = new Select('#select-item', {
+		// 		data: data,
+		// 		placeholder: 'Select an item',
+		// 		allowClear: true,
+		// 		theme: 'bootstrap'
+		// 	});
+		// });
+	</script>
 
 </body>
 
